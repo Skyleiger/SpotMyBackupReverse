@@ -9,7 +9,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 @Data
 public class SpotMyBackupReverse {
@@ -46,7 +48,11 @@ public class SpotMyBackupReverse {
             System.out.println("Reordering playlist tracks...");
             JsonObject oldPlaylists = jsonFile.getAsJsonObject("playlists");
             JsonObject newPlaylists = new JsonObject();
-            oldPlaylists.entrySet().forEach(entry -> {
+
+            List<Map.Entry<String, JsonElement>> entries = new ArrayList<>(oldPlaylists.entrySet());
+            Collections.reverse(entries);
+
+            entries.forEach(entry -> {
                 System.out.println("Reordering playlist '" + entry.getKey() + "'...");
                 JsonObject currentPlaylist = entry.getValue().getAsJsonObject();
                 JsonArray oldTracks = currentPlaylist.getAsJsonArray("tracks");
@@ -59,6 +65,7 @@ public class SpotMyBackupReverse {
                 newPlaylists.add(entry.getKey(), currentPlaylist);
                 System.out.println("Reordered playlist '" + entry.getKey() + "'.");
             });
+            
             jsonFile.add("playlists", newPlaylists);
             System.out.println("Reorder complete.");
 

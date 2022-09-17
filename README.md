@@ -84,7 +84,7 @@ If there are any further questions or areas for improvement, please feel free to
 
 ## Authors & Contributors
 
-* **Dominic Wienzek** - *Development* - [Skyleiger](https://github.com/skyleiger)
+* [Skyleiger](https://github.com/Skyleiger)
 
 These are the most common authors and contributors.
 See also the [github list of contributors](https://github.com/Skyleiger/SpotMyBackupReverse/contributors) who
@@ -93,5 +93,5 @@ this project.
 
 ## License
 
-This project is is the property of the author(s) and may only be used with the consent of the author(s). Other uses are
-not permitted.
+See [LICENSE](https://github.com/Skyleiger/SpotMyBackupReverse/blob/master/LICENSE) file for the license of this
+project.

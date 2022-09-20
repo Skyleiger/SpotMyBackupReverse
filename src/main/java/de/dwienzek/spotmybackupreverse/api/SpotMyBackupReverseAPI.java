@@ -1,4 +1,4 @@
-package de.dwienzek.spotmybackupreverse;
+package de.dwienzek.spotmybackupreverse.api;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.util.DefaultIndenter;

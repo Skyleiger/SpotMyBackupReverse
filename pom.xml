@@ -6,7 +6,7 @@
 
     <groupId>de.dwienzek</groupId>
     <artifactId>spot-my-backup-reverse</artifactId>
-    <version>2.0.0-rc1</version>
+    <version>2.0.0-rc2</version>
     <packaging>jar</packaging>
 
     <properties>

@@ -19,16 +19,24 @@ This tool fixes this problem and **reorders the tracks as well as the playlists*
 
 There are currently two ways to use the tool.
 
-1. [Standalone via command-line](#1-standalone-via-command-line)
-2. [As an library in another java project](#2-as-an-library-in-another-java-project)
+1. [Using the GUI](#1-using-the-gui)
+2. [Standalone via command-line](#2-standalone-via-command-line)
+3. [As an library in another java project](#3-as-an-library-in-another-java-project)
 
-#### 1. Standalone via command-line
+#### 1. Using the GUI
+
+The Graphical User Interface can be opened simply by double-clicking on the JAR file or by using the
+command `java -jar SpotMyBackupReverse.jar`.
+<br>
+There, after entering the input and output file, the file can then be reversed by a button.
+
+#### 2. Standalone via command-line
 
 Simply use SpotMyBackupReverse by running the following at the command line:
 `java -jar SpotMyBackupReverse.jar <file>`
 The file attribute should be replaced with your backup json file.
 
-#### 2. As an library in another java project
+#### 3. As an library in another java project
 
 SpotMyBackupReverse also provides a programming interface through which any
 Java developer can access SpotMyBackupReverse's functionalities in their program.

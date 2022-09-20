@@ -81,7 +81,7 @@ public class MainController {
         SpotMyBackupReverseAPI spotMyBackupReverseAPI = new SpotMyBackupReverseAPI();
         try {
             spotMyBackupReverseAPI.reverseSpotMyBackupFile(inputPath, outputPath);
-            showInfoMessage("The SpotMyBackup file was successfully reversed. The new file is stored at " + outputPath.toAbsolutePath().toString());
+            showInfoMessage("The SpotMyBackup file was successfully reversed. The new file is stored at " + outputPath.toAbsolutePath());
         } catch (IOException exception) {
             LOGGER.error("Failed to reverse SpotMyBackupFile.", exception);
             showErrorMessage("The SpotMyBackupFile could not be reversed: " + exception.getLocalizedMessage() + ". See logs for more information.");

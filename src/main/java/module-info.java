@@ -5,7 +5,6 @@ module spotmybackupreverse {
     requires com.fasterxml.jackson.core;
     requires com.fasterxml.jackson.databind;
     requires java.desktop;
-    requires org.apache.logging.log4j.core;
 
     opens de.dwienzek.spotmybackupreverse to javafx.fxml;
     opens de.dwienzek.spotmybackupreverse.controller to javafx.fxml;

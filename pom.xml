@@ -82,7 +82,7 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>19</version>
+            <version>19.0.2</version>
             <classifier>mac</classifier>
         </dependency>
 

@@ -89,7 +89,7 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>19</version>
+            <version>20</version>
             <classifier>win</classifier>
         </dependency>
         <dependency>
